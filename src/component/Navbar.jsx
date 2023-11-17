@@ -1,9 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../style/Navbar.css";
 import logo from "../assets/bisaternak.svg";
 
-const Navbar = () => {
+const Navbar = ({ linkKelas, linkBeranda, linkKonsultasi, linkTentang }) => {
   useEffect(() => {
     // Tambahkan script jQuery
     const scriptJQuery = document.createElement("script");
@@ -40,7 +42,7 @@ const Navbar = () => {
           className="navbar-no-shadow-container w-nav">
           <div className="container-regular">
             <div className="navbar-wrapper">
-              <a href="#" className="navbar-brand w-nav-brand">
+              <Link to="/" className="navbar-brand w-nav-brand">
                 <img
                   src={logo}
                   loading="lazy"
@@ -48,37 +50,43 @@ const Navbar = () => {
                   alt=""
                   className="image"
                 />
-              </a>
+              </Link>
               <nav role="navigation" className="nav-menu-wrapper w-nav-menu">
                 <ul role="list" className="nav-menu w-list-unstyled">
                   <li>
-                    <a href="#" className="nav-link-copy">
+                    <Link to="/" style={linkBeranda} className="nav-link">
                       Beranda
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link">
+                    <Link to="/kelas" style={linkKelas} className="nav-link">
                       Kelas Ternak
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link">
+                    <Link
+                      to="/konsultasi"
+                      style={linkKonsultasi}
+                      className="nav-link">
                       Konsultasi
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="nav-link">
+                    <Link
+                      to="/tentang"
+                      style={linkTentang}
+                      className="nav-link">
                       Tentang
-                    </a>
+                    </Link>
                   </li>
                   <li className="mobile-margin-top-10">
                     <div className="nav-button-wrapper">
                       <a href="#" className="button-secondary w-button">
                         Daftar
                       </a>
-                      <a href="#" className="button-primary w-button">
-                        masuk
-                      </a>
+                      <Link to="/masuk" className="button-primary w-button">
+                        Masuk
+                      </Link>
                     </div>
                   </li>
                 </ul>
@@ -92,6 +100,13 @@ const Navbar = () => {
       </div>{" "}
     </>
   );
+};
+
+Navbar.propTypes = {
+  linkKelas: PropTypes.object.isRequired,
+  linkBeranda: PropTypes.object.isRequired,
+  linkKonsultasi: PropTypes.object.isRequired,
+  linkTentang: PropTypes.object.isRequired,
 };
 
 export default Navbar;
