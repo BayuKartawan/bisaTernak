@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Beranda from "./page/Beranda";
 import Konsultasi from "./page/Konsultasi";
@@ -7,6 +6,8 @@ import Profil from "./page/Profil";
 import Tentang from "./page/Tentang";
 import Masuk from "./page/Masuk";
 import Kosong from "./page/tidakTahu";
+import "./media/style.css";
+import "./media/body.css";
 
 function App() {
   return (
