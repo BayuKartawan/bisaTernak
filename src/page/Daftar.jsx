@@ -1,4 +1,3 @@
-
 import Navbar from "../component/Navbar"
 import { Link } from "react-router-dom";
 

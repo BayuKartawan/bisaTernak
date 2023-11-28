@@ -1,7 +1,7 @@
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
-import Banner from "../component/banner";
-import CardKonsul from "../component/cardKonsul";
+import Banner from "../component/Banner";
+import CardKonsul from "../component/CardKonsul";
 
 const Konsultasi = () => {
   const customLinkStyle = {

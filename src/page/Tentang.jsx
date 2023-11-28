@@ -1,7 +1,7 @@
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
-import CardTentang from "../component/cardTentang";
-import Banner from "../component/banner";
+import CardTentang from "../component/CardTentang";
+import Banner from "../component/Banner";
 
 const Tentang = () => {
   const customLinkStyle = {
