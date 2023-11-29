@@ -10,6 +10,7 @@ import Kosong from "./page/tidakTahu";
 import "./media/style.css";
 import "./media/body.css";
 import ScrollToTop from "./ScrollToTop";
+import Deskripsi from "./page/Deskripsi";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/tentang" element={<Tentang />} />
           <Route path="/masuk" element={<Masuk />} />
           <Route path="/daftar" element={<Daftar />} />
+          <Route path="/deskripsi" element={<Deskripsi />} />
           <Route path="*" element={<Kosong />} />
         </Routes>
       </Router>

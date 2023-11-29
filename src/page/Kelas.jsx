@@ -24,31 +24,37 @@ const Kelas = () => {
       <section className="component_kelass">
         <div className="w-layout-blockcontainer kelass_kontainer w-container">
           <CardKelas
+            link="/deskripsi"
+            judul="Gurihnya bisnis ternak"
+            oleh="Uzumaki bambang"
+            img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
+          />
+          <CardKelas
+            link="/sasa"
             judul="daadaad"
             oleh="adadadadad"
             img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
           />
           <CardKelas
+            link="/sasa"
             judul="daadaad"
             oleh="adadadadad"
             img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
           />
           <CardKelas
+            link="/sasa"
             judul="daadaad"
             oleh="adadadadad"
             img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
           />
           <CardKelas
+            link="/sasa"
             judul="daadaad"
             oleh="adadadadad"
             img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
           />
           <CardKelas
-            judul="daadaad"
-            oleh="adadadadad"
-            img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
-          />
-          <CardKelas
+            link="/sasa"
             judul="daadaad"
             oleh="adadadadad"
             img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"

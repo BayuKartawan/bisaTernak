@@ -4,12 +4,9 @@ import CardDeskripsi from "../component/CardDeskripsi";
 
 const Deskripsi = () => {
   const customLinkStyle = {
-    fontWeight: "700 ",
     textDecoration: "underline",
   };
-  const customColumnStyle = {
-    flexDirection: "row-reverse",
-  };
+
 
   return (
     <div>
