@@ -8,6 +8,7 @@ import Masuk from "./page/Masuk";
 import Daftar from "./page/Daftar"
 import Kosong from "./page/tidakTahu";
 import "./media/style.css";
+import "./media/style2.css";
 import "./media/body.css";
 import ScrollToTop from "./ScrollToTop";
 import Deskripsi from "./page/Deskripsi";
