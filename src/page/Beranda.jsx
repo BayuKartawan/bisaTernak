@@ -10,7 +10,7 @@ import Iklan from "../component/Iklan";
 
 const Beranda = () => {
   const customLinkStyle = {
-    fontWeight: "700 ",
+
     textDecoration: "underline",
   };
   return (

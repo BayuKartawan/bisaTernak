@@ -5,7 +5,7 @@ import CardKelas from "../component/CardKelas";
 
 const Kelas = () => {
   const customLinkStyle = {
-    fontWeight: "700 ",
+
     textDecoration: "underline",
   };
   const customBgStyle = {

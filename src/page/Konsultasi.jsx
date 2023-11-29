@@ -5,7 +5,7 @@ import CardKonsul from "../component/CardKonsul";
 
 const Konsultasi = () => {
   const customLinkStyle = {
-    fontWeight: "700",
+
     textDecoration: "underline",
   };
   const customKonsulStyle = {

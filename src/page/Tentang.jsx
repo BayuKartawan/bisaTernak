@@ -5,7 +5,7 @@ import Banner from "../component/Banner";
 
 const Tentang = () => {
   const customLinkStyle = {
-    fontWeight: "700 ",
+
     textDecoration: "underline",
   };
   const customColumnStyle = {
@@ -29,12 +29,12 @@ const Tentang = () => {
           gambarSrc="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e53d1f695122e04fc401_ill_sapi.svg"
           judul="Tentang Kami"
           paragraf1="Bisaternak merupakan website yang berisi informasi, tata cara, 
-            dan solusi terbaik untuk peternak dikarenakan semua yang ada di Bisaternak 
-            merupakan hasil dari pemikiran para ahli dibidang peternakan."
+          dan solusi terbaik untuk peternak dikarenakan semua yang ada di Bisaternak 
+          merupakan hasil dari pemikiran para ahli dibidang peternakan."
           paragraf2="Bekerjasama dengan ahli peternakan dan menawarkan solusi terkait 
-            seputar dunia peternakan khususnya peternak hewan ruminansia, seperti sapi, kambing,
-             rusa dan sebagainya. Dengan hadirnya website Bisaternak salah satu keuntungannya adalah
-              adanya layanan konsultasi dengan para ahli di bidang peternakan."
+          seputar dunia peternakan khususnya peternak hewan ruminansia, seperti sapi, kambing,
+          rusa dan sebagainya. Dengan hadirnya website Bisaternak salah satu keuntungannya adalah
+          adanya layanan konsultasi dengan para ahli di bidang peternakan."
         />
         <CardTentang
           columnStyle={customColumnStyle}

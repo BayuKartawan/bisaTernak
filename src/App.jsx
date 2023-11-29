@@ -9,11 +9,13 @@ import Daftar from "./page/Daftar"
 import Kosong from "./page/tidakTahu";
 import "./media/style.css";
 import "./media/body.css";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Beranda />} />
           <Route path="/konsultasi" element={<Konsultasi />} />
