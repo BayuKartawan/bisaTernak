@@ -6,7 +6,7 @@ import Profil from "./page/Profil";
 import Tentang from "./page/Tentang";
 import Masuk from "./page/Masuk";
 import Daftar from "./page/Daftar"
-import Kosong from "./page/tidakTahu";
+import Kosong from "./page/TidakTahu";
 import "./media/style.css";
 import "./media/style2.css";
 import "./media/body.css";
