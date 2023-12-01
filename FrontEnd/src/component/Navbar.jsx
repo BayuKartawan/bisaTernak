@@ -45,7 +45,7 @@ const Navbar = ({ linkKelas, linkBeranda, linkKonsultasi, linkTentang }) => {
                                 </ul>
                             </nav>
                             <div className="nav_menu_button w-nav-button">
-                                <div className="nav_icon w-icon-nav-menu"></div>
+                                <div className="nav_icon w-icon-nav-menu"><p>o</p></div>
                             </div>
                         </div>
                     </div>
