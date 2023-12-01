@@ -2647,7 +2647,6 @@ img {
 }
 
 .component_banner {
-    background-image: url("https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e5d080f3c207d7a46b18_bg_banner.png");
     background-position: 50%;
     background-size: cover;
 }
@@ -2703,7 +2702,7 @@ img {
 .heading-2 {
     color: #fff;
     font-size: 40px;
-    line-height: 35px;
+    line-height: 50px;
 }
 
 .paragraph-2 {

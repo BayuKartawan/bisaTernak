@@ -1,53 +1,81 @@
 import "../media/Carosel.css"
+import Dekorasi from "../assets/dekorasi.svg"
+import IL from "../assets/logo stekholder/IL.png"
+import MSIB from "../assets/logo stekholder/MSIB.png"
+import Ternaknesia from "../assets/logo stekholder/Ternaknesia.png"
+import ZEST from "../assets/logo stekholder/ZEST.png"
+import UNAIR from "../assets/logo stekholder/UNAIR.png"
 
 const caroselLogo = () => {
     return (
         <div className="w-layout-blockcontainer component_carosel w-container">
             <div className="w-layout-blockcontainer caroselcontainer w-container">
 
-                <div className="logocontainer scroll"><img
-                    src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844e1f4650d9c57911de_logo%20unair.png"
-                    loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d95abd34586fa104e_logo%20ternaknesia.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844dd628c3fb6456f446_Logo%20Zest.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d378415d1db522daf_logo%20MSIB.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d2cf38d9a43c88e4b_Logo%20IL.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /></div>
+                <div className="logocontainer scroll">
+                    <img
+                        src={UNAIR}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={Ternaknesia}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={ZEST}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={MSIB}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={IL}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                </div>
 
-                <div className="logocontainer scroll"><img
-                    src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844e1f4650d9c57911de_logo%20unair.png"
-                    loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d95abd34586fa104e_logo%20ternaknesia.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844dd628c3fb6456f446_Logo%20Zest.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d378415d1db522daf_logo%20MSIB.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6559844d2cf38d9a43c88e4b_Logo%20IL.png"
-                        loading="lazy" height="50" alt="" className="logostekholder" /><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656994be9606fec68fb5be6c_dekorasi.svg"
-                        loading="lazy" height="50" alt="" className="dekorasilogo" /></div>
+                <div className="logocontainer scroll">
+                    <img
+                        src={UNAIR}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={Ternaknesia}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={ZEST}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={MSIB}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                    <img
+                        src={IL}
+                        loading="lazy" height="50" alt="" className="logostekholder" />
+                    <img
+                        src={Dekorasi}
+                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                </div>
             </div>
         </div>
     );

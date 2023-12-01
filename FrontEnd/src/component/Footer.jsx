@@ -1,3 +1,8 @@
+import IG from "../assets/Sosmed/ig.svg"
+import Tweet from "../assets/Sosmed/tweet.svg"
+import FB from "../assets/Sosmed/fb.svg"
+import Logo from "../assets/Logo/bisaternak.svg"
+
 const Footer = () => {
     return (
         <section className="componen_footer">
@@ -8,7 +13,7 @@ const Footer = () => {
                     <div className="column_footer1 w-col w-col-6">
                         <a href="#" className="footer_blok_logo w-inline-block">
                             <img
-                                src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6558bf9a378415d1dbd3e7eb_logo%20baru.svg"
+                                src={Logo}
                                 loading="lazy"
                                 width="164"
                                 alt=""
@@ -26,7 +31,7 @@ const Footer = () => {
                             <h6 className="heading_footer">Ikuti Kami :</h6>
                             <a href="#" className="w-inline-block">
                                 <img
-                                    src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655ea7e32299eef8548e99d0_social.svg"
+                                    src={IG}
                                     loading="lazy"
                                     width="41"
                                     alt=""
@@ -35,7 +40,7 @@ const Footer = () => {
                             </a>
                             <a href="#" className="w-inline-block">
                                 <img
-                                    src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655ea7e31c75248c5fb53d3e_fb.svg"
+                                    src={FB}
                                     loading="lazy"
                                     width="41"
                                     alt=""
@@ -44,7 +49,7 @@ const Footer = () => {
                             </a>
                             <a href="#" className="w-inline-block">
                                 <img
-                                    src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655ea7e3739afdd09407745e_tweet.svg"
+                                    src={Tweet}
                                     loading="lazy"
                                     width="41"
                                     alt=""

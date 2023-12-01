@@ -1,3 +1,7 @@
+import Icon1 from "../assets/Konsul/icon1.svg"
+import Icon2 from "../assets/Konsul/icon2.svg"
+import Icon3 from "../assets/Konsul/icon3.svg"
+
 const cardKonsul = (props) => {
 
     const konsulStyle = props.konsulStyle || {};
@@ -11,7 +15,7 @@ const cardKonsul = (props) => {
                 <p className="konsul_card_p">{props.deskripsi}</p>
                 <div className="konsul_card_list">
                     <img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656215e44503332060ec31b9_icon1.svg"
+                        src={Icon1}
                         loading="lazy"
                         alt=""
                         className="konsul_card_icon"
@@ -23,7 +27,7 @@ const cardKonsul = (props) => {
                 </div>
                 <div className="konsul_card_list">
                     <img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656215e4e79197d7d711e01c_icon2.svg"
+                        src={Icon2}
                         loading="lazy"
                         alt=""
                         className="konsul_card_icon"
@@ -35,7 +39,7 @@ const cardKonsul = (props) => {
                 </div>
                 <div className="konsul_card_list">
                     <img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656215e4752a8dbde953453c_icon3.svg"
+                        src={Icon3}
                         loading="lazy"
                         alt=""
                         className="konsul_card_icon"

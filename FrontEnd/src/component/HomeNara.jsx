@@ -1,3 +1,7 @@
+import Nara1 from "../assets/Narasumber/1.jpg"
+import Nara2 from "../assets/Narasumber/2.jpg"
+import Nara3 from "../assets/Narasumber/3.jpg"
+
 const HomeNara = () => {
     return (
         <div className="w-layout-blockcontainer component_nara w-container">
@@ -7,7 +11,7 @@ const HomeNara = () => {
                 <div className="nara_colum_card w-col w-col-4">
                     <div className="nara_card">
                         <div className="nara_blok_gbr"><img
-                            src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148ecd9785440256d5c2_333.png"
+                            src={Nara1}
                             loading="lazy" width="375" alt="" className="narasumber" /></div>
                         <h6 className="nara_heading_card">drh. Agung Budianto ahmad, M.Si</h6>
                         <p className="nara_tks_card">Bapak drh. Agung Budianto ahmad, M.Si, merupakan dosen Universitas Gadjah
@@ -19,7 +23,7 @@ const HomeNara = () => {
                 <div className="nara_colum_card w-col w-col-4">
                     <div className="nara_card">
                         <div className="nara_blok_gbr"><img
-                            src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148e6b42d6bd1ea97dc6_111.png"
+                            src={Nara2}
                             loading="lazy" width="378" alt="" className="narasumber" /></div>
                         <h6 className="nara_heading_card">Ir. Syahril Akil</h6>
                         <p className="nara_tks_card">Bapak Ir. Syahrir Akil, IPU yang merupakan direktur dari PT. BSB, anak
@@ -31,7 +35,7 @@ const HomeNara = () => {
                 <div className="nara_colum_card w-col w-col-4">
                     <div className="nara_card">
                         <div className="nara_blok_gbr"><img
-                            src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148e93ec69d9518739d6_222.png"
+                            src={Nara3}
                             loading="lazy" width="370" alt="" className="narasumber" /></div>
                         <h6 className="nara_heading_card">drh. Siti Eliana, M.Si</h6>
                         <p className="nara_tks_card">Ibu Siti Eliana Rochmi adalah dosen Program Paramedis Veteriner Universitas

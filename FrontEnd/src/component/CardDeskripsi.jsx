@@ -6,6 +6,8 @@ const cardDeksripsi = (props) => {
         <div className="htentang_colum w-row" style={columnStyle}>
             <div className="htentang_c2 w-col w-col-8">
                 <h1 className="heading_deskripsi">{props.judul}</h1>
+
+                <iframe className="youtube" width="100%" height="434" src="https://www.youtube.com/embed/FzG4uDgje3M?si=nI49FctujOFDfSHd&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <img
                     src={props.gambarDeskripsiSrc}
                     loading="lazy"
@@ -13,7 +15,6 @@ const cardDeksripsi = (props) => {
                     alt=""
                     className="deskripsi_gambar"
                 />
-                <iframe className="youtube" width="560" height="315" src="https://www.youtube.com/embed/FzG4uDgje3M?si=nI49FctujOFDfSHd&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p className="deskripsi_paragraf">{props.paragraf1}</p>
                 <p className="deskripsi_paragraf">{props.paragraf2}</p>
                 <p className="deskripsi_paragraf">{props.paragraf3}</p>

@@ -1,3 +1,6 @@
+import Img from "../assets/aspirasi.png"
+
+
 const Aspirasi = () => {
     return (
         <div className="w-layout-blockcontainer card_home w-container">
@@ -26,10 +29,10 @@ const Aspirasi = () => {
                 <div className="gambar_konten w-col w-col-6">
                     <div className="blok_gambar">
                         <img
-                            src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655a32f3fdb0172c587e95ee_foto%20aspirasi.png"
+                            src={Img}
                             loading="lazy"
                             sizes="(max-width: 479px) 100vw, (max-width: 767px) 41vw, 40vw"
-                            srcSet="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655a32f3fdb0172c587e95ee_foto%20aspirasi-p-500.png 500w, https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655a32f3fdb0172c587e95ee_foto%20aspirasi.png 660w"
+                            srcSet={`${Img} 500w, ${Img} 660w`}
                             alt=""
                             className="gambar"
                         />
