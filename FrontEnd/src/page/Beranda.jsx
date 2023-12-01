@@ -9,23 +9,22 @@ import HomeNara from "../component/HomeNara";
 import Iklan from "../component/Iklan";
 
 const Beranda = () => {
-  const customLinkStyle = {
-
-    textDecoration: "underline",
-  };
-  return (
-    <div>
-      <Navbar linkBeranda={customLinkStyle} />
-      <Hero />
-      <CaroselLogo />
-      <Aspirasi />
-      <HomeTentang />
-      <HomeKelas />
-      <HomeNara />
-      <Iklan />
-      <Footer />
-    </div>
-  );
+    const customLinkStyle = {
+        textDecoration: "underline",
+    };
+    return (
+        <div>
+            <Navbar linkBeranda={customLinkStyle} />
+            <Hero />
+            <CaroselLogo />
+            <Aspirasi />
+            <HomeTentang />
+            <HomeKelas />
+            <HomeNara />
+            <Iklan />
+            <Footer />
+        </div>
+    );
 };
 
 export default Beranda;
