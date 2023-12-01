@@ -13,6 +13,7 @@ const cardDeksripsi = (props) => {
                     alt=""
                     className="deskripsi_gambar"
                 />
+                <iframe className="youtube" width="560" height="315" src="https://www.youtube.com/embed/FzG4uDgje3M?si=nI49FctujOFDfSHd&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p className="deskripsi_paragraf">{props.paragraf1}</p>
                 <p className="deskripsi_paragraf">{props.paragraf2}</p>
                 <p className="deskripsi_paragraf">{props.paragraf3}</p>

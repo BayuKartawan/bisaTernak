@@ -4,9 +4,9 @@
   font-size: 70px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal; 
+  line-height: normal;
   width: 813px;
-  height: 134px; 
+  height: 134px;
   margin-bottom: 60px;
 }
 
@@ -43,14 +43,17 @@
     font-size: 35px;
     font-style: normal;
     font-weight: 900;
-    line-height: normal; 
+    line-height: normal;
     width: 313px;
-    height: 25px; 
+    height: 25px;
   }
 
   .deskripsi_gambar {
     width: 100%;
   }
+
+  .youtube {
+    width: 100%;
+    height: 186px;
+  }
 }
-
-

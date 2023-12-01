@@ -37,22 +37,22 @@ const Konsultasi = () => {
                 />
                 <CardKonsul
                     konsulStyle={customKonsulStyle}
-                    nama="Drh. Agung Budianto Ahmad, M.Si"
-                    deskripsi="Bapak drh. Agung Budianto ahmad, M.Si, merupakan dosen Universitas 
-                    Gadjah Mada. beliau merupakan dokter hewan yang sudah banyak mengajar dibeberapa perguruan tinggi di Indonesia."
-                    foto="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148ecd9785440256d5c2_333.png"
-                    keahlian="Anatomi Veteriner | Mikrobiologi | KesehatanHewan | Reproduksi Ternak"
-                    pendidikan="S1 Kedokteran Hewan Unair | S2 Unair | Profesi Unair"
-                    layanan="Kesehatan Hewan - Penyakit pada Ternak -Menejemen Reproduksi - Vaksinasi"
+                    nama="Ir. Syahril Akil, S.Pt"
+                    deskripsi="Bapak Ir. Syahrir Akil, IPU yang merupakan direktur dari PT. BSB, anak perusahan dari PT Charoen Phokpand Indonesia. 
+                    beliau merupakan konsultan ternak, dan sudah memiliki pengalaman selama 26 tahun dibidang peternakan."
+                    foto="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148e6b42d6bd1ea97dc6_111.png"
+                    keahlian="Teknologi Hasil Ternak | Tekologi Pakan | Usaha Peternakan | Menejemen Lahan Ternak dan Konstruksi"
+                    pendidikan="S1 Peternakan Unhas  | Profesi UGM"
+                    layanan="Kesehatan Hewan - Penyakit pada Ternak - Menejemen Reproduksi - Vaksinasi"
                 />
                 <CardKonsul
-                    nama="Drh. Agung Budianto Ahmad, M.Si"
-                    deskripsi="Bapak drh. Agung Budianto ahmad, M.Si, merupakan dosen Universitas 
-                    Gadjah Mada. beliau merupakan dokter hewan yang sudah banyak mengajar dibeberapa perguruan tinggi di Indonesia."
-                    foto="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148ecd9785440256d5c2_333.png"
-                    keahlian="Anatomi Veteriner | Mikrobiologi | KesehatanHewan | Reproduksi Ternak"
-                    pendidikan="S1 Kedokteran Hewan Unair | S2 Unair | Profesi Unair"
-                    layanan="Kesehatan Hewan - Penyakit pada Ternak -Menejemen Reproduksi - Vaksinasi"
+                    nama="Drh. Siti Eliana Rochmi, M.Si"
+                    deskripsi="Ibu Siti Eliana Rochmi adalah dosen Program Paramedis Veteriner Universitas Airlangga. 
+                    Ibu Rochmi melakukan penelitian tentang Teknologi Terapan Kesehatan Hewan Tropis dan Kesehatan Hewan."
+                    foto="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e148e93ec69d9518739d6_222.png"
+                    keahlian="Pemuliaan Ternak | Farmkologi Veteriner | Vaksinologi | Legislasi Veteriner"
+                    pendidikan="S1 Kedokteran Hewan - S2 Unair Profesi Unair"
+                    layanan="Kesehatan Hewan - Penyakit pada Ternak - Menejemen Reproduksi - Vaksinasi"
                 />
             </div>
             <Footer />
