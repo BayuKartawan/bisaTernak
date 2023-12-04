@@ -9,6 +9,7 @@ import Masuk from "./page/Masuk";
 import Daftar from "./page/Daftar"
 import Kosong from "./page/TidakTahu";
 import Deskripsi from "./page/Deskripsi";
+import Deskripsi1 from "./page/Deskripsi1";
 import Up from "./page/Up";
 import "./media/Laptop.css";
 import "./media/style2.css";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/masuk" element={<Masuk />} />
           <Route path="/daftar" element={<Daftar />} />
           <Route path="/deskripsi" element={<Deskripsi />} />
+          <Route path="/deskripsi1" element={<Deskripsi1 />} />
           <Route path="/up" element={<Up />} />
           <Route path="*" element={<Kosong />} />
         </Routes>

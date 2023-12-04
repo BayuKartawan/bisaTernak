@@ -4,6 +4,7 @@ import Banner from "../component/Banner";
 import CardKelas from "../component/CardKelas";
 import Bg from "../assets/bg-kelas.png"
 import Search from "../component/Search";
+import Bg2 from "../assets/aspirasi.png"
 
 const Kelas = () => {
     const customLinkStyle = {
@@ -37,44 +38,44 @@ const Kelas = () => {
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
+                        link="/Deskripsi1"
+                        judul="Kelas Ternak Domba"
+                        oleh="Uciha Udin"
+                        img={Bg2}
+                    />
+                    <CardKelas
                         link="/sasa"
-                        judul="Pengenalan Agribisnis Sektor Peternakan"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
                         link="/sasa"
-                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
                         link="/sasa"
-                        judul="Probiotik Dalam Pakan bagi Ternak Ruminansia"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
                         link="/sasa"
-                        judul="Pengenalan Agribisnis Sektor Peternakan"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
                         link="/sasa"
-                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
                     <CardKelas
                         link="/sasa"
-                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
-                        oleh="adadadadad"
-                        img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
-                    />
-                    <CardKelas
-                        link="/sasa"
-                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
+                        judul="-"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />
