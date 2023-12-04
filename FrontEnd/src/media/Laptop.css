@@ -2332,7 +2332,7 @@ img {
     flex: 1;
     justify-content: space-between;
     align-items: baseline;
-    padding-left: 60px;
+    padding-left: 20px;
     display: flex;
 }
 
@@ -3099,18 +3099,14 @@ img {
 
 .search {
     flex-direction: row;
+    flex: 1;
     justify-content: center;
-    align-self: center;
     align-items: center;
     margin-bottom: 0;
     display: flex;
 }
 
 .componencari {
-    max-width: 1100px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    justify-content: center;
     display: flex;
 }
 
@@ -3118,6 +3114,7 @@ img {
     background-color: #ffa41b;
     border-radius: 7px;
     align-self: center;
+    margin-left: 20px;
     transition: all .2s;
 }
 
@@ -3138,7 +3135,6 @@ img {
 }
 
 .search-input {
-    width: 400px;
     border-radius: 7px 0 0 7px;
     margin-bottom: 0;
     padding-top: 10px;
@@ -3226,79 +3222,6 @@ img {
 
 .form-block {
     margin-top: 20px;
-}
-
-.div-block-2 {
-    max-width: 1300px;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-}
-
-.component_navbar-copy {
-    z-index: 200;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, .79);
-    border-bottom: 1px solid rgba(248, 112, 5, .3);
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-.nav-menu-copy {
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    display: flex;
-    position: relative;
-    top: 100px;
-}
-
-.nav-link-copy {
-    color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-family: Lato, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-}
-
-.nav-link-copy:hover {
-    color: rgba(26, 27, 31, .75);
-}
-
-.nav-link-copy:focus-visible {
-    outline-offset: 0px;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
-}
-
-.nav-link-copy[data-wf-focus-visible] {
-    outline-offset: 0px;
-    color: #0050bd;
-    border-radius: 4px;
-    outline: 2px solid #0050bd;
-}
-
-.button-2 {
-    display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -3526,31 +3449,6 @@ img {
 
     .dekorasilogo {
         height: 33px;
-    }
-
-    .component_navbar-copy {
-        background-color: #fff;
-    }
-
-    .nav-menu-copy {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, .25);
-        flex-wrap: wrap;
-        flex: 1;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 0;
-        display: flex;
-    }
-
-    .nav-link-copy {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .button-2 {
-        display: block;
     }
 }
 
@@ -3863,6 +3761,14 @@ img {
 
     .componencari {
         flex-direction: column;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .buttontambah {
+        margin-top: 10px;
+        margin-left: 0;
     }
 
     .paragraph-3 {
@@ -3873,25 +3779,6 @@ img {
     .column-2 {
         padding-left: 0;
         padding-right: 0;
-    }
-
-    .component_navbar-copy {
-        position: static;
-    }
-
-    .navbar_brand-copy {
-        padding-left: 0;
-    }
-
-    .nav-menu-copy {
-        flex-direction: column;
-        padding-left: 0;
-    }
-
-    .nav-link-copy {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: inline-block;
     }
 }
 
@@ -4277,10 +4164,17 @@ img {
 
     .componencari {
         flex-flow: column wrap;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .buttontambah {
+        margin-left: 0;
     }
 
     .search-input {
         width: 250px;
+        flex: 1;
     }
 
     .container-2,
@@ -4293,19 +4187,5 @@ img {
         font-size: 20px;
         font-weight: 700;
         line-height: 22px;
-    }
-
-    .component_navbar-copy {
-        position: -webkit-sticky;
-        position: sticky;
-    }
-
-    .nav-menu-copy {
-        flex-direction: column;
-    }
-
-    .logo_navbar-copy {
-        height: 25px;
-        padding-right: 27px;
     }
 }

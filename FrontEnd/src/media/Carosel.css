@@ -9,5 +9,6 @@
 }
 
 .scroll {
+    margin-left: 17px;
     animation: scroll 20s linear infinite;
 }
