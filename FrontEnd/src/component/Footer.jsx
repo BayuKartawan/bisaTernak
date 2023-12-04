@@ -16,7 +16,6 @@ const Footer = () => {
                                 src={Logo}
                                 loading="lazy"
                                 width="164"
-                                alt=""
                                 className="logo_footer"
                             />
                         </a>
@@ -34,7 +33,6 @@ const Footer = () => {
                                     src={IG}
                                     loading="lazy"
                                     width="41"
-                                    alt=""
                                     className="sosmed"
                                 />
                             </a>
@@ -43,7 +41,6 @@ const Footer = () => {
                                     src={FB}
                                     loading="lazy"
                                     width="41"
-                                    alt=""
                                     className="sosmed"
                                 />
                             </a>
@@ -52,7 +49,6 @@ const Footer = () => {
                                     src={Tweet}
                                     loading="lazy"
                                     width="41"
-                                    alt=""
                                     className="sosmed"
                                 />
                             </a>

@@ -14,67 +14,107 @@ const caroselLogo = () => {
                 <div className="logocontainer scroll">
                     <img
                         src={UNAIR}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={Ternaknesia}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={ZEST}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={MSIB}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={IL}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                 </div>
 
                 <div className="logocontainer scroll">
                     <img
                         src={UNAIR}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={Ternaknesia}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={ZEST}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={MSIB}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                     <img
                         src={IL}
-                        loading="lazy" height="50" alt="" className="logostekholder" />
+                        loading="lazy"
+                        height="50"
+                        className="logostekholder" />
                     <img
                         src={Dekorasi}
-                        loading="lazy" height="50" alt="" className="dekorasilogo" />
+                        loading="lazy"
+                        height="50"
+                        className="dekorasilogo" />
                 </div>
             </div>
         </div>

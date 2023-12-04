@@ -3,6 +3,7 @@ import Footer from "../component/Footer";
 import Banner from "../component/Banner";
 import CardKelas from "../component/CardKelas";
 import Bg from "../assets/bg-kelas.png"
+import Search from "../component/Search";
 
 const Kelas = () => {
     const customLinkStyle = {
@@ -11,6 +12,14 @@ const Kelas = () => {
     const customBgStyle = {
         backgroundImage: `url(${Bg})`,
     };
+    const customSizeStyle = {
+        width: "400px"
+    };
+    const customMarginStyle = {
+        marginTop: "50px",
+        marginBottom: "20px"
+    };
+
 
     return (
         <div>
@@ -19,6 +28,9 @@ const Kelas = () => {
                 bgStyle={customBgStyle}
                 h="Upgrade Ilmu Untuk Keuntungan yang Lebih Baik"
             />
+            <Search
+                Margin={customMarginStyle}
+                Size={customSizeStyle} />
             <section className="component_kelass">
                 <div className="w-layout-blockcontainer kelass_kontainer w-container">
                     <CardKelas

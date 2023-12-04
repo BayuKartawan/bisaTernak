@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import Beranda from "./page/Beranda";
 import Konsultasi from "./page/Konsultasi";
 import Kelas from "./page/Kelas";
@@ -7,11 +8,13 @@ import Tentang from "./page/Tentang";
 import Masuk from "./page/Masuk";
 import Daftar from "./page/Daftar"
 import Kosong from "./page/TidakTahu";
-import "./media/style.css";
-import "./media/style2.css";
-import "./media/body.css";
-import ScrollToTop from "./ScrollToTop";
 import Deskripsi from "./page/Deskripsi";
+import Up from "./page/Up";
+import "./media/Laptop.css";
+import "./media/style2.css";
+
+
+
 
 function App() {
   return (
@@ -27,6 +30,7 @@ function App() {
           <Route path="/masuk" element={<Masuk />} />
           <Route path="/daftar" element={<Daftar />} />
           <Route path="/deskripsi" element={<Deskripsi />} />
+          <Route path="/up" element={<Up />} />
           <Route path="*" element={<Kosong />} />
         </Routes>
       </Router>

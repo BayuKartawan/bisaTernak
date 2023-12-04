@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import Img from "../assets/aspirasi.png"
+
 
 const Navbar = ({ linkKelas, linkBeranda, linkKonsultasi, linkTentang }) => {
     useEffect(() => {
@@ -39,7 +41,18 @@ const Navbar = ({ linkKelas, linkBeranda, linkKonsultasi, linkTentang }) => {
                                 <li><Link to="/konsultasi" style={linkKonsultasi} className="nav-link">Konsultasi</Link></li>
                                 <li><Link to="/tentang" style={linkTentang} className="nav-link">Tentang</Link></li>
                                 <li>
-                                    <div className="nav-button-wrapper"><Link to="/masuk" className="button w-button">Masuk</Link></div>
+                                    <div className="nav-button-wrapper">
+                                        <Link to="/masuk" className="button w-button">Masuk</Link>
+                                        <Link to="/profil" >
+                                            <img
+                                                src={Img}
+                                                loading="lazy"
+                                                height="45"
+                                                width="45"
+                                                style={{ objectFit: "cover", boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.2)", display: "inline-block", borderRadius: "50%" }}>
+                                            </img>
+                                        </Link>
+                                    </div>
                                 </li>
                             </ul>
                         </nav>
