@@ -12,9 +12,7 @@ const Kelas = () => {
     const customBgStyle = {
         backgroundImage: `url(${Bg})`,
     };
-    const customSizeStyle = {
-        width: "400px"
-    };
+
     const customMarginStyle = {
         marginTop: "50px",
         marginBottom: "20px"
@@ -29,9 +27,8 @@ const Kelas = () => {
                 h="Upgrade Ilmu Untuk Keuntungan yang Lebih Baik"
             />
             <Search
-                Margin={customMarginStyle}
-                Size={customSizeStyle} />
-            <section className="component_kelass">
+                Margin={customMarginStyle} />
+            <section className="component_kelass" >
                 <div className="w-layout-blockcontainer kelass_kontainer w-container">
                     <CardKelas
                         link="/deskripsi"
@@ -60,6 +57,18 @@ const Kelas = () => {
                     <CardKelas
                         link="/sasa"
                         judul="Pengenalan Agribisnis Sektor Peternakan"
+                        oleh="adadadadad"
+                        img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
+                    />
+                    <CardKelas
+                        link="/sasa"
+                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
+                        oleh="adadadadad"
+                        img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
+                    />
+                    <CardKelas
+                        link="/sasa"
+                        judul="Menejemen Pemakaian Obat dan Vaksinasi pada Ternak"
                         oleh="adadadadad"
                         img="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/656223ff5479269f8042e551_gambar_kelas.png"
                     />

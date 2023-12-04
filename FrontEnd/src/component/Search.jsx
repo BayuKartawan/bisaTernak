@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types";
 
-const Search = ({ Size, Display, Margin }) => {
+const Search = ({ Display, Margin }) => {
     return (
         <div className="w-layout-blockcontainer componencari w-container" style={Margin}>
             <form
                 action="/search"
                 className="search w-form">
                 <input
-                    style={Size}
                     className="search-input w-input"
                     type="search"
                     autoFocus="true"
