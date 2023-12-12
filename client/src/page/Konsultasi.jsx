@@ -1,5 +1,3 @@
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
 import Banner from "../component/Banner";
 import CardKonsul from "../component/CardKonsul";
 import Nara1 from "../assets/Narasumber/1.jpg"
@@ -7,9 +5,7 @@ import Nara2 from "../assets/Narasumber/2.jpg"
 import Nara3 from "../assets/Narasumber/3.jpg"
 
 const Konsultasi = () => {
-    const customLinkStyle = {
-        textDecoration: "underline",
-    };
+
     const customKonsulStyle = {
         flexDirection: "row-reverse",
     };
@@ -20,7 +16,6 @@ const Konsultasi = () => {
 
     return (
         <>
-            <Navbar linkKonsultasi={customLinkStyle} />
             <Banner
                 bgStyle={customBgStyle}
                 h="Bicarakan Kepada para ahli"
@@ -58,7 +53,6 @@ const Konsultasi = () => {
                     layanan="Kesehatan Hewan - Penyakit pada Ternak - Menejemen Reproduksi - Vaksinasi"
                 />
             </div>
-            <Footer />
         </>
     );
 };

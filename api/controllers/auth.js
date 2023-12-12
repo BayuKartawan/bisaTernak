@@ -1,67 +1,62 @@
-const query = require("../database");
-const { randomUUID } = require("crypto");
-const bcryptjs = require("bcryptjs");
+import { db } from "../db.js";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
-async function register(req, res) {
-  const { name, email, phoneNumber, password, confPassword } = req.body;
+export const register = (req, res) => {
+  //CHECK EXISTING USER
+  const q = "SELECT * FROM users WHERE email = ? OR username = ?";
 
-  if (
-    name === undefined ||
-    name === "" ||
-    email === undefined ||
-    email === "" ||
-    phoneNumber === undefined ||
-    isNaN(+phoneNumber) ||
-    password === undefined ||
-    password === "" ||
-    confPassword === undefined ||
-    confPassword === ""
-  )
-    return res.status(400).json("Invalid data!");
+  db.query(q, [req.body.email, req.body.username], (err, data) => {
+    if (err) return res.status(500).json(err);
+    if (data.length) return res.status(409).json("User already exists!");
 
-  if (password !== confPassword) return res.status(400).json("Password not match!");
+    //Hash the password and create a user
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(req.body.password, salt);
 
-  try {
-    // logic handling
-    const isDuplicate = await query(
-      `
-        SELECT id FROM users WHERE phone_number = ? OR email = ? 
-    `,
-      [phoneNumber, email]
+    const q = "INSERT INTO users(`username`,`email`,`password`) VALUES (?)";
+    const values = [req.body.username, req.body.email, hash];
+
+    db.query(q, [values], (err, data) => {
+      if (err) return res.status(500).json(err);
+      return res.status(200).json("User has been created.");
+    });
+  });
+};
+
+export const login = (req, res) => {
+  //CHECK USER
+
+  const q = "SELECT * FROM users WHERE username = ?";
+
+  db.query(q, [req.body.username], (err, data) => {
+    if (err) return res.status(500).json(err);
+    if (data.length === 0) return res.status(404).json("User not found!");
+
+    //Check password
+    const isPasswordCorrect = bcrypt.compareSync(
+      req.body.password,
+      data[0].password
     );
 
-    if (isDuplicate.length > 0) return res.status(400).json("User already exists!");
+    if (!isPasswordCorrect)
+      return res.status(400).json("Wrong username or password!");
 
-    const salt = await bcryptjs.genSalt(12);
-    const hash = await bcryptjs.hash(password, salt);
+    const token = jwt.sign({ id: data[0].id }, "jwtkey");
+    const { password, ...other } = data[0];
 
-    await query(
-      `
-        INSERT INTO users (
-            uuid, name, email, phone_number, password
-        ) VALUES (
-            ?, ?, ?, ?, ?
-        );
-    `,
-      [randomUUID(), name, email, phoneNumber, hash]
-    );
+    res
+      .cookie("access_token", token, {
+        httpOnly: true,
+      })
+      .status(200)
+      .json(other);
+  });
+};
 
-    return res.status(200).json("Register success!");
-  } catch (error) {
-    return res.status(400).json("Something went wrong!");
-  }
-}
-
-async function login(req, res) {
-  const {} = req.body;
-  try {
-    // logic handling
-  } catch (error) {
-    return res.status(400).json("Something went wrong!");
-  }
-}
-
-module.exports = {
-  register,
-  login,
+export const logout = (req, res) => {
+  res.clearCookie("access_token", {
+    sameSite: "none",
+    secure: true
+  }).status(200).json("User has been logged out.")
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HomeKelas = () => {
     return (
         <div className="w-layout-blockcontainer card_home w-container">
@@ -30,7 +32,8 @@ const HomeKelas = () => {
                             <div className="no_list_kelas">5</div>
                             <p className="teks_list_kelas">Dan masih bnyak lagi</p>
                         </div>
-                    </div><a href="#" className="button_oren w-button">Kunjungi Kelas Ternak Kami</a>
+                    </div>
+                    <Link to="/kelas" className="button_oren w-button">Kunjungi Kelas Ternak Kami</Link>
                 </div>
 
                 {/* KOLOM GAMBAR */}

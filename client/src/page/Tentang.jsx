@@ -1,12 +1,8 @@
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
 import CardTentang from "../component/CardTentang";
 import Banner from "../component/Banner";
 
 const Tentang = () => {
-    const customLinkStyle = {
-        textDecoration: "underline",
-    };
+
     const customColumnStyle = {
         flexDirection: "row-reverse",
     };
@@ -17,7 +13,6 @@ const Tentang = () => {
 
     return (
         <div>
-            <Navbar linkTentang={customLinkStyle} />
             <Banner
                 bgStyle={customBgStyle}
                 logoPutih="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e53dc7d1f8d7a3f17382_logo_putih.svg"
@@ -44,7 +39,6 @@ const Tentang = () => {
                     dan lainnya yang masih seputar peternakan ruminansia"
                 />
             </div>
-            <Footer />
         </div>
     );
 };

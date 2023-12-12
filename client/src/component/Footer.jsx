@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IG from "../assets/Sosmed/ig.svg"
 import Tweet from "../assets/Sosmed/tweet.svg"
 import FB from "../assets/Sosmed/fb.svg"
@@ -11,14 +12,14 @@ const Footer = () => {
 
                     {/* KOLOM LOGO */}
                     <div className="column_footer1 w-col w-col-6">
-                        <a href="#" className="footer_blok_logo w-inline-block">
+                        <Link to="/" className="footer_blok_logo w-inline-block">
                             <img
                                 src={Logo}
                                 loading="lazy"
                                 width="164"
                                 className="logo_footer"
                             />
-                        </a>
+                        </Link>
                         <p className="teks-_copyrigt">
                             © 2023 All Rights Reserved Bisaternak
                         </p>

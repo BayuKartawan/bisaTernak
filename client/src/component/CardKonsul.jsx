@@ -61,7 +61,7 @@ const cardKonsul = (props) => {
                         className="konsul_nara"
                     />
                 </div>
-                <a href="#" className="button_card_konsul w-button">
+                <a href="https://api.whatsapp.com/send?phone=6283112016292" className="button_card_konsul w-button">
                     Kirim pesan
                 </a>
             </div>

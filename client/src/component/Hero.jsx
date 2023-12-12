@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const hero = () => {
     return (
         <section className="component_header">
@@ -9,16 +11,12 @@ const hero = () => {
                         dan dapatkan konsultasi ahli di sini!
                     </div>
                     <div className="header_container_button">
-                        <a href="#" className="button w-button">
-                            Ikuti kelas ternak hewan ruminansia
-                        </a>
-                        <a href="#" className="button w-button">
-                            Konsultasi permasalahan ternak anda
-                        </a>
+                        <Link to="/kelas" className="button w-button">Ikuti kelas ternak hewan ruminansia</Link>
+                        <Link to="/konsultasi" className="button w-button">Konsultasi permasalahan ternak anda</Link>
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 

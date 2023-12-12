@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const homeTentang = () => {
     return (
         <div className="w-layout-blockcontainer card_home w-container">
@@ -9,8 +11,8 @@ const homeTentang = () => {
                         terbaik untuk peternak dikarenakan semua yang ada di BisaTernak merupakan hasil dari pemikiran para
                         ahli dibidang peternakan.</p>
                     <div className="text-block">Bekerjasama dengan para ahli peternakan</div>
-                    <div className="text-block">Tempat belajar seputar hewan ruminansia</div><a href="#"
-                        className="button_oren w-button">Lebih lengkap Tentang BisaTernak</a>
+                    <div className="text-block">Tempat belajar seputar hewan ruminansia</div>
+                    <Link to="/tentang" className="button_oren w-button">Lebih lengkap Tentang BisaTernak</Link>
                 </div>
                 <div className="gambar_konten_tentang w-col w-col-6">
                     <div className="blok_gambar"><img

@@ -18,26 +18,30 @@ const CardDeksripsi = (Des) => {
                 <h3 className="desh">{Des.Judul}</h3>
                 {/* colom 1 */}
                 <div className="column w-col w-col-8" >
-                    <iframe
-                        width="100%"
-                        height="470"
-                        className="youtube"
-                        src={`https://www.youtube.com/embed/${Des.Vidio}`}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Embedded YouTube Video"
-                    />
-                    <p className="deslink">Sourch Vidio : https://youtu.be/f1iW734wGns?si=wS7oxJ1h3E7qy3YH{Des.Vidio}</p>
+                    <div style={{ paddingTop: '56.17021276595745%' }} className="w-embed-youtubevideo youtube">
+                        <iframe
+                            src={`https://www.youtube.com/embed/${Des.Vidio}?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0`}
+                            frameBorder="0"
+                            style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', pointerEvents: 'auto' }}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            title="Embedded YouTube Video"
+                        ></iframe>
+                    </div>
                     <p className="desp">{Des.Deskripsi}</p>
                 </div>
 
                 {/* colom 2 */}
                 <div className="column-2 w-col w-col-4" style={{ backgroundColor: "white" }}>
                     <div style={{ borderRadius: "7px", border: "2px solid #8ADAB2", padding: "10px", backgroundColor: "#F8FFD2", marginBottom: "20px", marginTop: "10px" }}>
-                        <p className="desp" style={{ width: "bold" }} >
-                            Pemateri : kjaksjas <br />
-                            publish &nbsp;&nbsp;&nbsp;: 10 juli 2008 <br /></p>
+                        <p style={{
+                            textAlign: "justify",
+                            fontFamily: "League Spartan, sans-serif",
+                            fontSize: "18px",
+                            lineHeight: "25px",
+                        }} >
+                            Pemateri &nbsp;: Uzumaki Bambang <br />
+                            Diunggah : 10 juli 2008 <br /></p>
                         <Link to="/up" className="buttontambah w-button">Ubah</Link>
                         <Link to="" className="buttontambah w-button" style={{ marginLeft: "10px" }}>Hapus</Link>
                     </div>
