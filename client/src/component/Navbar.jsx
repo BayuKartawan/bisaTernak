@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Img from "../assets/aspirasi.png"
+import Berger from "../assets/ikon/berger-ikon.svg"
 import "../media/Aktif.css"
 
 
@@ -67,7 +68,14 @@ const Navbar = () => {
                             </ul>
                         </nav>
                         <div className="nav_menu_button w-nav-button">
-                            <div className="nav_icon ">o</div>
+                            <div className="nav_icon ">
+                                <img
+                                    src={Berger}
+                                    loading="lazy"
+                                    height="35"
+                                    width="35">
+                                </img>
+                            </div>
                         </div>
                     </div>
                 </div>
