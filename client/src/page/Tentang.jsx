@@ -3,7 +3,7 @@ import Banner from "../component/Banner";
 import Bg from "../assets/Banner/bgKelas.jpg"
 import Logo from "../assets/Symbol/logo_putih.svg"
 import Sapi from "../assets/Tentang/sapi.svg"
-import Kambing from "../assets/Tentang/Kambing.svg"
+import Kambing from "../assets/Tentang/kambing.svg"
 
 const Tentang = () => {
 
