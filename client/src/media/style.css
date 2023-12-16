@@ -2221,6 +2221,7 @@ img {
 
 .nav-link:hover {
     color: rgba(26, 27, 31, .75);
+    border-bottom: 2px solid #f86f03;
 }
 
 .nav-link:focus-visible {
@@ -2971,6 +2972,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
+    margin-top: 100px;
 }
 
 .form_judul {
@@ -3766,6 +3768,15 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+
+    .component_form {
+        margin-top: 10px;
+    }
+
+    .navbar {
+        padding-right: 0PX;
+    }
+
     .component_navbar {
         position: -webkit-sticky;
         position: sticky;

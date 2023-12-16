@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "../media/Kelas.css"
 
 const CardKelas = (konten) => {
     return (
-        <Link to={`${konten.link}`} style={{ textDecoration: "none", }}>
+        <Link to={`${konten.link}`} className="link-kelas" style={konten.Link} >
             <div className="klelass_card">
                 <div className="kelass_blok_gambar">
                     <img
@@ -18,8 +19,8 @@ const CardKelas = (konten) => {
                 <h6 className="kelass_h1_card">{konten.judul}</h6>
                 <h6 className="kelass_h2_card">Oleh : {konten.oleh}</h6>
             </div>
-        </Link>
+        </Link >
     );
-};
+}
 
 export default CardKelas;

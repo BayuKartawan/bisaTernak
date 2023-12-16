@@ -1,6 +1,9 @@
 import Safe from 'react-safe'
 import Search from './Search';
 import { Link } from 'react-router-dom';
+import Hapus from "../assets/Symbol/Remove.png"
+import Ubah from "../assets/Symbol/Updates.png"
+import Kembali from "../assets/Symbol/GoBack.png"
 
 const CardDeksripsi = (Des) => {
 
@@ -20,15 +23,21 @@ const CardDeksripsi = (Des) => {
                     textDecoration: "none",
                     fontFamily: "lato",
                     fontSize: "14px",
-                    color: "#4F4A45",
-                    border: "1px solid #D25380",
+                    color: "white",
+                    border: "2px solid #C1F2B0",
                     padding: "5px 10px 5px 10px",
                     borderRadius: "20px",
-                    backgroundColor: "#F6F1E9",
+                    backgroundColor: "#FFA41B",
                     marginLeft: "10px",
                     position: "relative",
                     top: "10px",
-                }}>Kembali</Link>
+                }}>
+                    <img
+                        src={Kembali}
+                        loading="lazy"
+                        height="20"
+                        style={{ marginBottom: "5px" }}>
+                    </img> Kembali</Link>
                 <h3 className="desh" style={{ paddingTop: "10px" }}>{Des.Judul}</h3>
 
                 {/* colom 1 */}
@@ -57,8 +66,20 @@ const CardDeksripsi = (Des) => {
                         }} >
                             Pemateri &nbsp;: Uzumaki Bambang <br />
                             Diunggah : 10 juli 2008 <br /></p>
-                        <Link to="/up" className="buttontambah w-button">Ubah</Link>
-                        <Link to="" className="buttontambah w-button" style={{ marginLeft: "10px" }}>Hapus</Link>
+                        <div style={{ display: "flex", textAlign: "center" }}>
+                            <Link to="/up" className="buttontambah w-button" style={{ width: "50%" }}><img
+                                src={Ubah}
+                                loading="lazy"
+                                height="20">
+                            </img> Ubah</Link>
+                            <Link to="" className="buttontambah w-button" style={{ marginLeft: "10px", width: "50%" }}>
+                                <img
+                                    src={Hapus}
+                                    loading="lazy"
+                                    height="20">
+                                </img> Hapus</Link>
+                        </div>
+
                     </div>
 
                     {/* Search */}

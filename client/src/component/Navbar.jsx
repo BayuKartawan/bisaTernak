@@ -68,7 +68,7 @@ const Navbar = () => {
                             </ul>
                         </nav>
                         <div className="nav_menu_button w-nav-button">
-                            <div className="nav_icon ">
+                            <div className="nav_icon">
                                 <img
                                     src={Berger}
                                     loading="lazy"

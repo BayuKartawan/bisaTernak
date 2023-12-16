@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types";
+import Tambah from "../assets/Symbol/AddAlbum.png"
 
 const Search = ({ Display, Margin }) => {
     return (
@@ -22,7 +23,13 @@ const Search = ({ Display, Margin }) => {
             </form>
             <Link to="/up"
                 style={Display}
-                className="buttontambah w-button">+ Tambah kelas</Link>
+                className="buttontambah w-button">
+                <img
+                    src={Tambah}
+                    height="20px"
+                    loading="lazy"
+                    style={{ marginBottom: "3px" }}>
+                </img> Tambah kelas</Link>
         </div>
     )
 }

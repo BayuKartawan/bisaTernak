@@ -34,7 +34,7 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            <div className="component_form " style={{ marginTop: "100px", }}>
+            <div className="component_form ">
                 <div className="form_judul">Masuk ke akun Anda</div>
 
                 <form onSubmit={handleSubmit} className="form">
