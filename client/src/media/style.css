@@ -3768,6 +3768,9 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+    .komponendes {
+        background-color: white;
+    }
 
     .component_form {
         margin-top: 10px;

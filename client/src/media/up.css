@@ -1,0 +1,20 @@
+.popup {
+    background: #F4F27E;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: absolute;
+    margin-right: 10px;
+    /* Atur sesuai kebutuhan Anda */
+    z-Index: 1;
+    /* Pastikan lebih tinggi dari elemen-elemen di sekitarnya */
+}
+
+.popup-click {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background-color: #D83F31;
+    color: white;
+}
