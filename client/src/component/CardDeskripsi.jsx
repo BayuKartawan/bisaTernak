@@ -15,7 +15,22 @@ const CardDeksripsi = (Des) => {
         <div>
 
             <div className="w-row" style={{ backgroundColor: "white" }}>
-                <h3 className="desh">{Des.Judul}</h3>
+
+                <Link to="/kelas" style={{
+                    textDecoration: "none",
+                    fontFamily: "lato",
+                    fontSize: "14px",
+                    color: "#4F4A45",
+                    border: "1px solid #D25380",
+                    padding: "5px 10px 5px 10px",
+                    borderRadius: "20px",
+                    backgroundColor: "#F6F1E9",
+                    marginLeft: "10px",
+                    position: "relative",
+                    top: "10px",
+                }}>Kembali</Link>
+                <h3 className="desh" style={{ paddingTop: "10px" }}>{Des.Judul}</h3>
+
                 {/* colom 1 */}
                 <div className="column w-col w-col-8" >
                     <div style={{ paddingTop: '56.17021276595745%' }} className="w-embed-youtubevideo youtube">

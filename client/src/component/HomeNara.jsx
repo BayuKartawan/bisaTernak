@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Nara1 from "../assets/Narasumber/1.jpg"
-import Nara2 from "../assets/Narasumber/2.jpg"
-import Nara3 from "../assets/Narasumber/3.jpg"
+import Nara1 from "../assets/Narasumber/pakAgung.jpg"
+import Nara2 from "../assets/Narasumber/pakSyahril.jpg"
+import Nara3 from "../assets/Narasumber/buSiti.jpg"
 
 const HomeNara = () => {
     return (

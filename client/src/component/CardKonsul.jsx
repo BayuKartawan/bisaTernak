@@ -1,6 +1,6 @@
-import Icon1 from "../assets/Konsul/icon1.svg"
-import Icon2 from "../assets/Konsul/icon2.svg"
-import Icon3 from "../assets/Konsul/icon3.svg"
+import Icon1 from "../assets/Symbol/Konsul/icon1.svg"
+import Icon2 from "../assets/Symbol/Konsul/icon2.svg"
+import Icon3 from "../assets/Symbol/Konsul/icon3.svg"
 
 const cardKonsul = (props) => {
 

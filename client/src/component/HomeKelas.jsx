@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Img from "../assets/Kelas/domba.jpg"
 
 const HomeKelas = () => {
     return (
@@ -38,11 +39,13 @@ const HomeKelas = () => {
 
                 {/* KOLOM GAMBAR */}
                 <div className="gambar_konten_kelas w-col w-col-6">
-                    <div className="blok_gambar"><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e0a72c7b3271a8569e2f4_iklani.png"
-                        loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 40vw"
-                        srcSet="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e0a72c7b3271a8569e2f4_iklani-p-500.png 500w, https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e0a72c7b3271a8569e2f4_iklani.png 623w"
-                        alt="" className="gambar" /></div>
+                    <div className="blok_gambar">
+                        <img
+                            src={Img}
+                            loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 37vw, 40vw"
+                            srcSet={`${Img} 500w, ${Img} 623w`}
+                            alt="" className="gambar" />
+                    </div>
                 </div>
             </div>
         </div>

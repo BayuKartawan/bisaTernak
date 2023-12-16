@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import IG from "../assets/Sosmed/ig.svg"
-import Tweet from "../assets/Sosmed/tweet.svg"
-import FB from "../assets/Sosmed/fb.svg"
-import Logo from "../assets/Logo/bisaternak.svg"
+import IG from "../assets/Symbol/Sosmed/ig.svg"
+import Tweet from "../assets/Symbol/Sosmed/tweet.svg"
+import FB from "../assets/Symbol/Sosmed/fb.svg"
+import Logo from "../assets/Symbol/bisaternak.svg"
 
 const Footer = () => {
     return (

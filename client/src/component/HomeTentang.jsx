@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Img from "../assets/Beranda/aspirasi.png"
 
 const homeTentang = () => {
     return (
@@ -16,9 +17,9 @@ const homeTentang = () => {
                 </div>
                 <div className="gambar_konten_tentang w-col w-col-6">
                     <div className="blok_gambar"><img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e04beacb6cb16afa22cf1_tentangg.png"
+                        src={Img}
                         loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 41vw, 40vw"
-                        srcSet="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e04beacb6cb16afa22cf1_tentangg-p-500.png 500w, https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/655e04beacb6cb16afa22cf1_tentangg.png 620w"
+                        srcSet={`${Img} 500w, ${Img} 620w`}
                         alt="" className="gambar" /></div>
                 </div>
             </div>

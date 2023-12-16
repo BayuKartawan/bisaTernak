@@ -1,10 +1,10 @@
 import "../media/Carosel.css"
-import Dekorasi from "../assets/dekorasi.svg"
-import IL from "../assets/logo stekholder/IL.png"
-import MSIB from "../assets/logo stekholder/MSIB.png"
-import Ternaknesia from "../assets/logo stekholder/Ternaknesia.png"
-import ZEST from "../assets/logo stekholder/ZEST.png"
-import UNAIR from "../assets/logo stekholder/UNAIR.png"
+import Dekorasi from "../assets/Symbol/dekorasi.svg"
+import IL from "../assets/Symbol/logo stekholder/IL.png"
+import MSIB from "../assets/Symbol/logo stekholder/MSIB.png"
+import Ternaknesia from "../assets/Symbol/logo stekholder/Ternaknesia.png"
+import ZEST from "../assets/Symbol/logo stekholder/ZEST.png"
+import UNAIR from "../assets/Symbol/logo stekholder/UNAIR.png"
 
 const caroselLogo = () => {
     return (

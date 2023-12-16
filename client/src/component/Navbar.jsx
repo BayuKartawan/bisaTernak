@@ -1,8 +1,8 @@
-// import { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import Img from "../assets/aspirasi.png"
-import Berger from "../assets/ikon/berger-ikon.svg"
+import Img from "../assets/Beranda/aspirasi.png"
+import Berger from "../assets/Symbol/berger-ikon.svg"
 import "../media/Aktif.css"
 
 
@@ -11,26 +11,26 @@ import "../media/Aktif.css"
 
 const Navbar = () => {
 
-    // useEffect(() => {
-    //     // Load jQuery
-    //     const jqueryScript = document.createElement('script');
-    //     jqueryScript.src = 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=655623fb68d5248a0a2ff1cc';
-    //     jqueryScript.integrity = 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=';
-    //     jqueryScript.crossOrigin = 'anonymous';
-    //     document.body.appendChild(jqueryScript);
+    useEffect(() => {
+        // Load jQuery
+        const jqueryScript = document.createElement('script');
+        jqueryScript.src = 'https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=655623fb68d5248a0a2ff1cc';
+        jqueryScript.integrity = 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=';
+        jqueryScript.crossOrigin = 'anonymous';
+        document.body.appendChild(jqueryScript);
 
-    //     // Load other scripts
-    //     const webflowScript = document.createElement('script');
-    //     webflowScript.src = 'https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/js/webflow.2a12922c5.js';
-    //     webflowScript.type = 'text/javascript';
-    //     document.body.appendChild(webflowScript);
+        // Load other scripts
+        const webflowScript = document.createElement('script');
+        webflowScript.src = 'https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/js/webflow.2a12922c5.js';
+        webflowScript.type = 'text/javascript';
+        document.body.appendChild(webflowScript);
 
-    //     // Cleanup on component unmount
-    //     return () => {
-    //         document.body.removeChild(jqueryScript);
-    //         document.body.removeChild(webflowScript);
-    //     };
-    // }, []); // empty dependency array means this effect will only run once when the component mounts
+        // Cleanup on component unmount
+        return () => {
+            document.body.removeChild(jqueryScript);
+            document.body.removeChild(webflowScript);
+        };
+    }, []); // empty dependency array means this effect will only run once when the component mounts
 
 
     return (

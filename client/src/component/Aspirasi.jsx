@@ -1,4 +1,4 @@
-import Img from "../assets/aspirasi.png"
+import Img from "../assets/Kelas/girlGoat.jpg"
 
 
 const Aspirasi = () => {
@@ -12,16 +12,17 @@ const Aspirasi = () => {
                     <h1 className="judul_konten2">Tujuan kami</h1>
                     <p className="paragraph_konten">
                         Mengacu data Sistem Informasi Kesehatan Hewan Nasional (ISIKHNAS)
-                        pada november 2023, telah ditemukan 115.067 hewan ruminansia
-                        terjangkit penyakit diseluruh indonesia. Ini disebabkan karena
-                        kurangnya pengetahuan peternak untuk mencegah dan menyembuhkan
-                        penyakit pada hewan ternak mereka.
+                        pada november 2023, <span style={{ backgroundColor: "#C1F2B0", padding: "0 5px", borderRadius: "10px" }}>
+                            telah ditemukan 115.067 hewan ruminansia
+                            terjangkit penyakit diseluruh indonesia. Ini disebabkan karena
+                            kurangnya pengetahuan peternak untuk mencegah dan menyembuhkan
+                            penyakit</span> pada hewan ternak mereka.
                     </p>
                     <p className="paragraph_konten">
                         Terkait data diatas kami ingin menyediakan informasi untuk membantu
-                        peternak dan memberikan layanan jaringan koneksi antar komunitas
-                        peternak serta memberikan konsultasi edukatif terkait ilmu
-                        peternakan dan kesehatan hewan.
+                        peternak dan <span style={{ backgroundColor: "#C1F2B0", padding: "0 5px", borderRadius: "10px" }}>memberikan layanan jaringan koneksi antar komunitas
+                            peternak serta memberikan konsultasi edukatif terkait ilmu
+                            peternakan dan kesehatan hewan.</span>
                     </p>
                 </div>
 
@@ -39,7 +40,7 @@ const Aspirasi = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

@@ -24,7 +24,7 @@ const Register = () => {
     return (
         <>
             <Navbar />
-            <div className="component_form w-form" style={{ marginTop: "100px", }}>
+            <div className="component_form" style={{ marginTop: "100px", }}>
                 <div className="form_judul">Buat Akun</div>
                 <form onSubmit={handleSubmit} className="form">
                     <label htmlFor="name" className="form_label">

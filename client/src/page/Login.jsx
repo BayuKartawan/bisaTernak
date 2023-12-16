@@ -34,7 +34,7 @@ const Login = () => {
     return (
         <div>
             <Navbar />
-            <div className="component_form w-form" style={{ marginTop: "100px", }}>
+            <div className="component_form " style={{ marginTop: "100px", }}>
                 <div className="form_judul">Masuk ke akun Anda</div>
 
                 <form onSubmit={handleSubmit} className="form">
@@ -68,12 +68,6 @@ const Login = () => {
                     {err && <p>{err}</p>}
 
                 </form>
-                <div className="w-layout-hflex flex-block">
-                    <img
-                        src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6565c78b3ae93ba265fab74d_ggel.png"
-                        loading="lazy" alt="" className="image-5" />
-                    <div className="text-block-2">Lanjutkan dengan google</div>
-                </div>
                 <div className="form_footer">Belum memiliki akun? <Link to="/register" style={{ textDecoration: "none", color: "orange" }}> Daftar disini</Link></div>
                 <div className="w-form-done"></div>
                 <div className="w-form-fail"></div>

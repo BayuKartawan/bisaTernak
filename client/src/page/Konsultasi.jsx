@@ -1,8 +1,9 @@
 import Banner from "../component/Banner";
 import CardKonsul from "../component/CardKonsul";
-import Nara1 from "../assets/Narasumber/1.jpg"
-import Nara2 from "../assets/Narasumber/2.jpg"
-import Nara3 from "../assets/Narasumber/3.jpg"
+import Nara1 from "../assets/Narasumber/pakAgung.jpg"
+import Nara2 from "../assets/Narasumber/pakSyahril.jpg"
+import Nara3 from "../assets/Narasumber/buSiti.jpg"
+import Bg from "../assets/Banner/bgTentang.png"
 
 const Konsultasi = () => {
 
@@ -10,8 +11,7 @@ const Konsultasi = () => {
         flexDirection: "row-reverse",
     };
     const customBgStyle = {
-        backgroundImage:
-            "url('https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e5d080f3c207d7a46b18_bg_banner.png')",
+        backgroundImage: `url(${Bg})`
     };
 
     return (

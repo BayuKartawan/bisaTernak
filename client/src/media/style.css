@@ -457,23 +457,7 @@ button,
     border: 0;
 }
 
-.w-form {
-    margin: 0 0 15px;
-}
 
-.w-form-done {
-    text-align: center;
-    background-color: #ddd;
-    padding: 20px;
-    display: none;
-}
-
-.w-form-fail {
-    background-color: #ffdede;
-    margin-top: 10px;
-    padding: 10px;
-    display: none;
-}
 
 label {
     margin-bottom: 5px;
@@ -549,12 +533,6 @@ textarea.w-select {
     height: auto;
 }
 
-.w-form-label {
-    cursor: pointer;
-    margin-bottom: 0;
-    font-weight: normal;
-    display: inline-block;
-}
 
 .w-radio {
     margin-bottom: 5px;
@@ -2126,7 +2104,7 @@ textarea.w-select {
 }
 
 .w-layout-blockcontainer {
-    max-width: 940px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -2296,7 +2274,7 @@ img {
 
 .header_container_inti {
     height: 455px;
-    background-image: url("https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6558dd1bd628c3fb64e9d599_bg%20header.svg");
+    background-image: url(../assets/Beranda/header.svg);
     background-position: 50%;
     background-repeat: repeat;
     background-size: cover;
@@ -2759,12 +2737,13 @@ img {
 .heading {
     margin-bottom: 20px;
     font-family: Lato, sans-serif;
+    line-height: "50px";
 }
 
 .heading-2 {
     color: #fff;
     font-size: 40px;
-    line-height: 35px;
+
 }
 
 .paragraph-2 {
@@ -3702,6 +3681,7 @@ img {
 
     .banner_bloktks {
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     .konsul_card1 {
@@ -4040,6 +4020,7 @@ img {
 
     .heading-2 {
         font-size: 22px;
+        line-height: 30px;
     }
 
     .paragraph-2 {

@@ -1,5 +1,9 @@
 import CardTentang from "../component/CardTentang";
 import Banner from "../component/Banner";
+import Bg from "../assets/Banner/bgKelas.jpg"
+import Logo from "../assets/Symbol/logo_putih.svg"
+import Sapi from "../assets/Tentang/sapi.svg"
+import Kambing from "../assets/Tentang/Kambing.svg"
 
 const Tentang = () => {
 
@@ -7,19 +11,22 @@ const Tentang = () => {
         flexDirection: "row-reverse",
     };
     const customBgStyle = {
-        backgroundImage:
-            "url('https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e5d080f3c207d7a46b18_bg_banner.png')",
+        backgroundImage: `url(${Bg})`
+    };
+    const customLogoStyle = {
+        marginTop: "150px"
     };
 
     return (
         <div>
             <Banner
                 bgStyle={customBgStyle}
-                logoPutih="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e53dc7d1f8d7a3f17382_logo_putih.svg"
+                logoPutih={Logo}
+                MarginL={customLogoStyle}
             />
             <div className="w-layout-blockcontainer tentang_container w-container">
                 <CardTentang
-                    gambarSrc="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e53d1f695122e04fc401_ill_sapi.svg"
+                    gambarSrc={Sapi}
                     judul="Tentang Kami"
                     paragraf1="Bisaternak merupakan website yang berisi informasi, tata cara, 
                     dan solusi terbaik untuk peternak dikarenakan semua yang ada di Bisaternak merupakan hasil dari pemikiran para ahli dibidang peternakan."
@@ -30,7 +37,7 @@ const Tentang = () => {
                 />
                 <CardTentang
                     columnStyle={customColumnStyle}
-                    gambarSrc="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6561e53dafefa88debd6d804_ill_kambing.svg"
+                    gambarSrc={Kambing}
                     paragraf1="Tempat belajar seputar hewan ruminansia dari mulai cara merawat 
                     obat untuk hewan ruminansia dan semua hal lainnya terkait hewan ruminansia."
                     paragraf2="Bisaternak pertama juga pertama kali terbentuk dari diskusi project massive yang beranggotakan 6 orang yang topik utamanya

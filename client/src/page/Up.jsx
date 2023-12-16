@@ -23,7 +23,7 @@ const Up = () => {
                 <div className="w-layout-blockcontainer container-2 w-container">
                     <h3 className="heading-4">Unggah koten</h3>
                     <p className="paragraph-4">Unggah konten dalam ruang linkup hewan ruminansia</p>
-                    <div className="form-block w-form">
+                    <div className="form-block">
 
                         <form name="wf-form-unggah"
                             method="post" >
