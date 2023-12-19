@@ -3,11 +3,13 @@ import { useState } from "react";
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import axios from "axios";
+
 
 const Login = () => {
 
     const [inputs, setInputs] = useState({
-        username: "",
+        email: "",
         password: "",
     });
     const [err, setError] = useState(null);
@@ -23,6 +25,7 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         try {
             await login(inputs)
             navigate("/");
@@ -46,8 +49,8 @@ const Login = () => {
                         required
                         className="form_input w-input"
                         maxLength="256"
-                        name="username"
-                        placeholder="Masukkan username anda"
+                        name="email"
+                        placeholder="Masukkan email anda"
                         onChange={handleChange}
                     />
 

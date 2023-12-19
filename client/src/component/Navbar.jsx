@@ -1,15 +1,41 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+
+import { Link, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Img from "../assets/Beranda/aspirasi.png"
 import Berger from "../assets/Symbol/berger-ikon.svg"
 import "../media/Aktif.css"
+import axios from "axios";
 
 
 
 
 
 const Navbar = () => {
+
+    const [user, setUser] = useState({});
+    const navigate = useNavigate();
+
+    const fetchUser = async () => {
+        await axios.post('http://127.0.0.1:8800/api/users/user', {uuid : localStorage.getItem("uuid")}).then(res => {
+            setUser(res.data[0]);
+        })
+    }
+
+    const logout = async () => {
+
+        await axios.post('http://127.0.0.1:8800/api/auth/logout', {uuid : localStorage.getItem("uuid")}).then(res => {
+
+            if(res.statusText == 'OK') {
+                localStorage.clear();
+                window.location.reload(); 
+                navigate("/")
+                
+            }
+        })
+
+    }
 
     useEffect(() => {
         // Load jQuery
@@ -24,6 +50,9 @@ const Navbar = () => {
         webflowScript.src = 'https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/js/webflow.2a12922c5.js';
         webflowScript.type = 'text/javascript';
         document.body.appendChild(webflowScript);
+        if(localStorage.getItem('uuid')) {
+            fetchUser();
+        }
 
         // Cleanup on component unmount
         return () => {
@@ -53,7 +82,9 @@ const Navbar = () => {
                                 <li><NavLink to="/tentang" activeClassName="active" className="nav-link">Tentang</NavLink></li>
                                 <li>
                                     <div className="nav-button-wrapper">
+                                    {user.uuid ?                                         <btn className="button w-button" onClick={logout}>Logout</btn> : 
                                         <Link to="/login" className="button w-button">Masuk</Link>
+                                    }
                                         <Link to="/profil" >
                                             <img
                                                 src={Img}

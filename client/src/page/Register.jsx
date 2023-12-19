@@ -1,6 +1,7 @@
+import axios from "axios";
 import Navbar from "../component/Navbar"
 import { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -8,17 +9,18 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    const navigate = useNavigate();
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         // Tambahkan logika pendaftaran atau pengiriman data ke server di sini
-        console.log('Data Pendaftaran:', { name, email, password, confirmPassword });
-
-        // Setelah pengiriman, Anda mungkin ingin mengatur state kembali ke nilai awal
-        setName('');
-        setEmail('');
-        setPassword('');
-        setConfirmPassword('');
+        axios.post('http://127.0.0.1:8800/api/auth/register', {name, email, password}).then(res => {
+            if(res.statusText == "OK"){ 
+                navigate('/login');
+            }
+        })
     };
 
     return (
