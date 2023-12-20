@@ -1,8 +1,13 @@
+import { useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 import { Link } from "react-router-dom"
 import PropTypes from "prop-types";
 import Tambah from "../assets/Symbol/AddAlbum.png"
 
 const Search = ({ Display, Margin }) => {
+
+    const { currentUser } = useContext(AuthContext);
+
     return (
         <div className="w-layout-blockcontainer componencari w-container" style={Margin}>
             <form
@@ -21,15 +26,12 @@ const Search = ({ Display, Margin }) => {
                     value="Cari"
                     className="search-button w-button" />
             </form>
-            <Link to="/up"
-                style={Display}
-                className="buttontambah w-button">
-                <img
-                    src={Tambah}
-                    height="20px"
-                    loading="lazy"
-                    style={{ marginBottom: "3px" }}>
-                </img> Tambah kelas</Link>
+            {currentUser && (
+                <Link to="/up" style={Display} className="buttontambah w-button">
+                    <img src={Tambah} height="20px" loading="lazy" style={{ marginBottom: "3px" }} alt="Tambah kelas" />
+                    Tambah kelas
+                </Link>
+            )}
         </div>
     )
 }

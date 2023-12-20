@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-import axios from "axios";
+import Swal from 'sweetalert2';
 
 
 const Login = () => {
@@ -27,10 +27,20 @@ const Login = () => {
         e.preventDefault();
 
         try {
-            await login(inputs)
+            await login(inputs);
             navigate("/");
+            Swal.fire({
+                icon: 'success',
+                title: 'Anda berhasil masuk!',
+                text: 'Selamat datang kembali!',
+            });
         } catch (err) {
             setError(err.response.data);
+            Swal.fire({
+                icon: 'error',
+                title: 'Login gagal!',
+                text: 'Pastikan email dan password Anda benar.',
+            });
         }
     };
 
@@ -72,8 +82,6 @@ const Login = () => {
 
                 </form>
                 <div className="form_footer">Belum memiliki akun? <Link to="/register" style={{ textDecoration: "none", color: "orange" }}> Daftar disini</Link></div>
-                <div className="w-form-done"></div>
-                <div className="w-form-fail"></div>
             </div>
         </div>
     );

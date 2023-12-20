@@ -2,9 +2,3 @@
     font-weight: bold;
     border-bottom: 2px solid #f86f03;
 }
-
-@media screen and (max-width: 479px) {
-    .nav-profil {
-        padding-top: 16px;
-    }
-}

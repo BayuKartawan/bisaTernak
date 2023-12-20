@@ -1,12 +1,25 @@
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import { useState } from 'react';
+import { useState, useContext, useEffect } from 'react';
+import { AuthContext } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 import CardKelas from "../component/CardKelas";
 import UpImg from "../assets/Symbol/AddImage.png"
 import Unggah from "../assets/Symbol/Up.png"
 import "../media/up.css"
 
 const Up = () => {
+
+    //jika belumlogin 
+    const { currentUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Redirect to login if user is not authenticated
+        if (!currentUser) {
+            navigate('/login');
+        }
+    }, [currentUser, navigate]);
 
     //up gambar n preview
     const [selectedImage, setSelectedImage] = useState(null);

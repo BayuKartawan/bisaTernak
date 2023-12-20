@@ -1,8 +1,23 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 import Img from "../assets/Beranda/aspirasi.png"
 
 const Profil = () => {
+
+    //belum login
+    const { currentUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        // Cek apakah pengguna sudah login
+        if (!currentUser) {
+            // Jika belum login, arahkan ke halaman login
+            navigate("/login");
+        }
+    }, [currentUser, navigate]);
+    //---
 
     const [user, setUser] = useState({});
 
@@ -18,6 +33,7 @@ const Profil = () => {
             fetchUser();
         }
     }, [])
+
     return (
         <section className="component_profil">
             <div className="w-layout-blockcontainer profil_bg w-container"></div>
@@ -31,9 +47,8 @@ const Profil = () => {
                 <div className="w-layout-vflex">
                     <div className="biodata">Nama : {user.name}</div>
                     <div className="biodata">Email : {user.email}</div>
-                    <div className="biodata">Alamat : Koniha</div>
-                    <div className="biodata">No HP : Koniha</div>
-                </div><a href="#" className="button-copy w-button">Perbaiki data</a>
+                </div>
+                <a href="#" className="button-copy w-button">Perbaiki data</a>
             </div>
         </section>
     );

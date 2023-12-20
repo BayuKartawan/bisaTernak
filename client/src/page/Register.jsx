@@ -2,6 +2,7 @@ import axios from "axios";
 import Navbar from "../component/Navbar"
 import { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import Swal from 'sweetalert2';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -16,12 +17,28 @@ const Register = () => {
         e.preventDefault();
 
         // Tambahkan logika pendaftaran atau pengiriman data ke server di sini
-        axios.post('http://127.0.0.1:8800/api/auth/register', {name, email, password}).then(res => {
-            if(res.statusText == "OK"){ 
-                navigate('/login');
-            }
-        })
+        axios.post('http://127.0.0.1:8800/api/auth/register', { name, email, password })
+            .then(res => {
+                if (res.statusText === "OK") {
+                    // Menampilkan SweetAlert ketika pendaftaran berhasil
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Pendaftaran Berhasil!',
+                        text: 'Akun Anda telah berhasil dibuat. Silakan login untuk melanjutkan.',
+                    });
+                    navigate('/login');
+                }
+            })
+            .catch(error => {
+                // Menampilkan SweetAlert ketika pendaftaran gagal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Pendaftaran Gagal!',
+                    text: 'Terjadi kesalahan saat melakukan pendaftaran. Silakan coba lagi.',
+                });
+            });
     };
+
 
     return (
         <>
