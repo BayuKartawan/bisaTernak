@@ -2,7 +2,7 @@ import express from "express";
 import { register, login, logout } from "../controllers/auth.js";
 
 const router = express.Router();
-router.get("/tes", function(req,res,next) {
+router.get("/tes", function (req, res, next) {
   res.json(' tes');
 });
 router.post("/register", register);

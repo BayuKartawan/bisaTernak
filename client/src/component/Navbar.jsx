@@ -1,16 +1,11 @@
-import { useEffect } from "react";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import Img from "../assets/Beranda/aspirasi.png"
 import Berger from "../assets/Symbol/berger-ikon.svg"
+import Logo from "../assets/Symbol/bisaternak.svg"
 import "../media/Aktif.css"
 import axios from "axios";
-
-
-
-
 
 const Navbar = () => {
 
@@ -18,20 +13,20 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const fetchUser = async () => {
-        await axios.post('http://127.0.0.1:8800/api/users/user', {uuid : localStorage.getItem("uuid")}).then(res => {
+        await axios.post('http://127.0.0.1:8800/api/users/user', { uuid: localStorage.getItem("uuid") }).then(res => {
             setUser(res.data[0]);
         })
     }
 
     const logout = async () => {
 
-        await axios.post('http://127.0.0.1:8800/api/auth/logout', {uuid : localStorage.getItem("uuid")}).then(res => {
+        await axios.post('http://127.0.0.1:8800/api/auth/logout', { uuid: localStorage.getItem("uuid") }).then(res => {
 
-            if(res.statusText == 'OK') {
+            if (res.statusText == 'OK') {
                 localStorage.clear();
-                window.location.reload(); 
+                window.location.reload();
                 navigate("/")
-                
+
             }
         })
 
@@ -50,7 +45,7 @@ const Navbar = () => {
         webflowScript.src = 'https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/js/webflow.2a12922c5.js';
         webflowScript.type = 'text/javascript';
         document.body.appendChild(webflowScript);
-        if(localStorage.getItem('uuid')) {
+        if (localStorage.getItem('uuid')) {
             fetchUser();
         }
 
@@ -61,6 +56,16 @@ const Navbar = () => {
         };
     }, []); // empty dependency array means this effect will only run once when the component mounts
 
+    // color berger on di cekik
+    const [isColorChanged, setColorChanged] = useState(false);
+
+    const handleClick = () => {
+        setColorChanged(!isColorChanged);
+    };
+
+    const imageStyle = {
+        filter: isColorChanged ? 'invert(100%)' : 'none',
+    };
 
     return (
         <div className="component_navbar">
@@ -71,7 +76,7 @@ const Navbar = () => {
                     <div className="navbar_container_item">
                         <Link to="/" className="navbar_brand w-nav-brand">
                             <img
-                                src="https://assets-global.website-files.com/655623fb68d5248a0a2ff1cc/6558bf9a378415d1dbd3e7eb_logo%20baru.svg"
+                                src={Logo}
                                 loading="lazy" width="164" alt="" className="logo_navbar" />
                         </Link>
                         <nav role="navigation" className="navbar_menu w-nav-menu" >
@@ -82,17 +87,19 @@ const Navbar = () => {
                                 <li><NavLink to="/tentang" activeClassName="active" className="nav-link">Tentang</NavLink></li>
                                 <li>
                                     <div className="nav-button-wrapper">
-                                    {user.uuid ?                                         <btn className="button w-button" onClick={logout}>Logout</btn> : 
-                                        <Link to="/login" className="button w-button">Masuk</Link>
-                                    }
-                                        <Link to="/profil" >
+                                        {user.uuid ? <btn className="button w-button" onClick={logout}>Logout</btn> :
+                                            <Link to="/login" className="button w-button">Masuk</Link>
+                                        }
+                                        <Link
+                                            to="/profil"
+                                            className="nav-profil" >
                                             <img
                                                 src={Img}
                                                 loading="lazy"
                                                 height="45"
                                                 width="45"
-                                                style={{ objectFit: "cover", boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.2)", display: "inline-block", borderRadius: "50%" }}>
-                                            </img>
+                                                style={{ objectFit: "cover", boxShadow: "0px 3px 5px rgba(0, 0, 0, 0.2)", display: "inline-block", borderRadius: "50%" }}
+                                            />
                                         </Link>
                                     </div>
                                 </li>
@@ -104,8 +111,12 @@ const Navbar = () => {
                                     src={Berger}
                                     loading="lazy"
                                     height="35"
-                                    width="35">
-                                </img>
+                                    width="35"
+                                    style={imageStyle}
+                                    onClick={handleClick}
+                                    alt=""
+                                />
+
                             </div>
                         </div>
                     </div>

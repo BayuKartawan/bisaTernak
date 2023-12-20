@@ -28,13 +28,16 @@ export const register = (req, res) => {
 export const login = (req, res) => {
   //CHECK USER
 
-  
+
+
   const q = "SELECT * FROM users WHERE email = ?";
-  
+
   db.query(q, [req.body.email], (err, data) => {
     if (err) return res.status(500).json(err);
+
+
     if (data.length === 0) return res.status(404).json("User not found!");
-    
+
     //Check password
     const isPasswordCorrect = bcrypt.compareSync(
       req.body.password,
