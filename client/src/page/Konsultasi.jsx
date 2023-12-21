@@ -1,6 +1,6 @@
-import { AuthContext } from "../context/AuthContext";
-import { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../context/AuthContext";
+// import { useContext, useEffect } from "react";
+// import { useNavigate } from "react-router-dom";
 import Banner from "../component/Banner";
 import CardKonsul from "../component/CardKonsul";
 import Nara1 from "../assets/Narasumber/pakAgung.jpg"
@@ -11,16 +11,16 @@ import Bg from "../assets/Banner/bgTentang.png"
 const Konsultasi = () => {
 
     //belum login
-    const { currentUser } = useContext(AuthContext);
-    const navigate = useNavigate();
+    // const { currentUser } = useContext(AuthContext);
+    // const navigate = useNavigate();
 
-    useEffect(() => {
-        // Cek apakah pengguna sudah login
-        if (!currentUser) {
-            // Jika belum login, arahkan ke halaman login
-            navigate("/login");
-        }
-    }, [currentUser, navigate]);
+    // useEffect(() => {
+    //     // Cek apakah pengguna sudah login
+    //     if (!currentUser) {
+    //         // Jika belum login, arahkan ke halaman login
+    //         navigate("/login");
+    //     }
+    // }, [currentUser, navigate]);
     //---
 
     const customKonsulStyle = {
