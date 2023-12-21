@@ -6,7 +6,7 @@ const Deskripsi = () => {
         <section className="komponendes" style={{ marginTop: "20px" }}>
             <div className="w-layout-blockcontainer deskontainer w-container">
                 <Deskripsis
-                    Judul="Ternak Sapi Gembira"
+                    Judul="Peternak sapi sukses"
                     Vidio="yidbHYrDjJM"
                     Deskripsi={
                         <>Peternak sapi adalah individu atau kelompok yang berdedikasi untuk membimbing, merawat, dan mengelola sapi dengan penuh perhatian. Mereka memiliki pengetahuan yang mendalam tentang kebutuhan dan perilaku sapi, serta keterampilan dalam merawat dan memelihara ternak dengan baik.

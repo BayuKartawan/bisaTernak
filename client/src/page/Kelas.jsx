@@ -1,5 +1,7 @@
 import Banner from "../component/Banner";
 import CardKelas from "../component/CardKelas";
+import Kembali from "../assets/Symbol/GoBack.png"
+import { Link } from "react-router-dom";
 import Bg from "../assets/Banner/bgKelas.jpg"
 import Search from "../component/Search";
 import Cover1 from "../assets/Kelas/domba.jpg";
@@ -43,54 +45,65 @@ const Kelas = () => {
                 <div className="w-layout-blockcontainer kelass_kontainer w-container">
                     <CardKelas
                         link="/deskripsi"
-                        judul="kelas ternak sapi"
-                        oleh="Uzumaki bambang"
+                        judul="Peternak sapi sukses"
+                        oleh="Agung Budianto Ahmad"
+                        img={Cover8}
+                    />
+                    <CardKelas
+                        link="/Deskripsi1"
+                        judul="Desain dan Pengelolaan Kandang Domba"
+                        oleh="Agung Budianto Ahmad"
                         img={Cover1}
                     />
                     <CardKelas
                         link="/Deskripsi1"
-                        judul="Kelas Ternak Domba"
-                        oleh="Uciha Udin"
-                        img={Cover2}
-                    />
-                    <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
+                        judul="Nutrisi Kambing yang Seimbang"
+                        oleh="ir. Syahril Akil"
                         img={Cover3}
                     />
                     <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
+                        link="/Deskripsi1"
+                        judul="Desain Kandang dan Pengelolaan Lahan Sapi"
+                        oleh="Fakultas Peternakan UGM"
                         img={Cover4}
                     />
                     <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
+                        link="/deskripsi"
+                        judul="Penggunaan Herbal dalam Perawatan Domba"
+                        oleh="Asril Nurul Huda, S.Pt, M.Sc"
                         img={Cover5}
                     />
                     <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
+                        link="/Deskripsi"
+                        judul="Teknologi Canggih di Peternakan Sapi"
+                        oleh="Bayu kartawan"
                         img={Cover6}
                     />
                     <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
+                        link="/Deskripsi"
+                        judul="Penerapan Sistem Informasi Peternakan"
+                        oleh="ir. Syahril Akil"
                         img={Cover7}
                     />
                     <CardKelas
-                        link="/sasa"
-                        judul="-"
-                        oleh="adadadadad"
-                        img={Cover8}
+                        link="/Deskripsi1"
+                        judul="Penggunaan Herbal dalam Perawatan Kambing"
+                        oleh="Bayu kartwan"
+                        img={Cover2}
                     />
                 </div>
             </section>
+            <div className="blok-cari" style={{ textAlign: "center", alignContent: "center", marginTop: "20px" }}>
+                <Link to="/kelas"
+                    className="btn-cari"
+                    style={{ padding: "10px" }}>
+                    <img
+                        src={Kembali}
+                        loading="lazy"
+                        height="20"
+                        style={{ marginBottom: "5px", transform: "rotate(-90deg)", marginRight: "5px" }}>
+                    </img>Lihat lebih banyak</Link>
+            </div>
         </div>
     );
 };

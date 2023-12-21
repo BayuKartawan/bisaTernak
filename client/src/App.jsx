@@ -16,6 +16,7 @@ import Register from "./page/Register"
 import Kosong from "./page/TidakTahu";
 import Deskripsi from "./page/Deskripsi";
 import Deskripsi1 from "./page/Deskripsi1";
+import CariKelas from "./page/CariKelas"
 import Up from "./page/Up";
 import "./media/style.css";
 import "./media/style2.css";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/kelas",
         element: <Kelas />,
+      },
+      {
+        path: "/carikelas",
+        element: <CariKelas />,
       },
       {
         path: "/konsultasi",

@@ -96,8 +96,8 @@ const CardDeksripsi = (Des) => {
                             fontSize: "18px",
                             lineHeight: "25px",
                         }} >
-                            Pemateri &nbsp;: Uzumaki Bambang <br />
-                            Diunggah : 10 juli 2008 <br /></p>
+                            Oleh &nbsp;: Agung Budianto Ahmad <br />
+                            Diunggah : 10 November 2023 <br /></p>
 
                         {currentUser && (
                             <>

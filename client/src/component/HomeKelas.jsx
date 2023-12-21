@@ -9,7 +9,7 @@ const HomeKelas = () => {
                 {/* KOLOM TEKS */}
                 <div className="teks_konten_kelas w-col w-col-6">
                     <h1 className="judul_konten">Kelas</h1>
-                    <h1 className="judul_konten2">BisaTernak?</h1>
+                    <h1 className="judul_konten2">BisaTernak</h1>
                     <p className="paragraph_konten">Bingung memulai bisnis peternakan? Mulai dari ikut kelas BisaTernak aja dulu,
                         ada banyak ilmu untuk bekal kamu yang ingin memulai bisnis peternakan</p>
                     <div className="div-block">

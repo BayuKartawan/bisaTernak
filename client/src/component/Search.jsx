@@ -11,7 +11,7 @@ const Search = ({ Display, Margin }) => {
     return (
         <div className="w-layout-blockcontainer componencari w-container" style={Margin}>
             <form
-                action="/search"
+                action="/carikelas"
                 className="search ">
                 <input
                     className="search-input w-input"
